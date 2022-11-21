@@ -4,7 +4,7 @@ Console.WriteLine("Введите пятизначное число N : ");
 int Number = Convert.ToInt32(Console.ReadLine());
 
 string NumText = Convert.ToString(Number);
-if (NumText.Length < 6)
+if (NumText.Length < 6 && NumText.Length > 4)
 {
     if (NumText[0] == NumText[4] && NumText[1] == NumText[3])
     {
@@ -12,7 +12,7 @@ if (NumText.Length < 6)
     }
     else 
     {
-    Console.WriteLine(" Число не является палиндром ");
+    Console.WriteLine(" Число не является палиндромом ");
     }
 }
 else
